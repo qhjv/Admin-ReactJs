@@ -1,0 +1,8 @@
+.PeopleView{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    background:#f7f9fe;
+    position: absolute;
+    top:0
+}

@@ -1,0 +1,47 @@
+
+.MuiFormGroup-root {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row!important;
+}
+fieldset.MuiFormControl-root {
+    margin-top: 15px;
+}
+.MuiDialogTitle-root {
+    text-align: center;
+}
+.MuiTypography-h6 {
+    font-size: 1.7rem!important;
+}
+.MuiPaper-elevation8 {
+    box-shadow: 0px 5px 1px -3px rgb(0 0 0 / 20%), 0px 3px 9px -7px rgb(0 0 0 / 0%), 0px 3px 14px -3px rgb(0 0 0 / 12%)!important;
+}
+.updateDelete {
+    background: #ffffff;
+    color:#5E4534;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    border-radius: 7px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+    display: none;
+    overflow: hidden;
+}
+.mainview__candidate--hearder-more:hover .updateDelete{
+    display:block;
+}
+.mainview__candidate--hearder-more::before{
+    content:"";
+    width:70px;
+    height:30px;
+    top:5px;
+    right:0;
+    position:absolute;
+}
+.MuiDialogTitle-root {
+    padding: 0 24px!important;
+}
+
+.MuiButton-textPrimary {
+    background: #e3ecf5!important;
+}

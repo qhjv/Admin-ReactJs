@@ -1,0 +1,145 @@
+.mainview {
+    width: 70%;
+    height: 100%;
+    padding: 50px;
+    overflow: auto;
+}
+.mainview2__main--skills ul {
+    display: flex;
+}
+/*------------------
+Mainview
+------------------*/
+
+
+
+.mainview__hire {
+    width: 850px;
+}
+.mainview__hire--header{
+    margin-top: 10px;
+}
+.mainview__hire--header-title h3 {
+    font-size: 22px;
+    font-weight: 700;
+}
+.mainview__hire--header-button {
+    font-size: 15px;
+    font-weight: 600;
+    color:var(--color-main);
+    cursor: pointer;
+}
+.mainview__hire--percents.d-flex.align-items-center.justify-content-between.col-lg-6 {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 10px 16px;
+    margin-left: 20px;
+    max-width: 46%;
+}
+.mainview__hire--percents {
+    margin-top: 15px;
+}
+.mainview__hire--percent-circle {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.mainview__hire--percent-circle svg {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-90deg);
+}
+.mainview__hire--percent-circle svg circle{
+    width:98%;
+    height:98%;
+    fill:none;
+    stroke: #d7dde9;
+    stroke-width: 4.5;
+    stroke-linecap: round;
+    transform: translate(3px,3px);
+}
+.mainview__hire--percent-circle svg circle:nth-child(2){
+    stroke-dasharray: 114;
+    stroke-dashoffset: 114;
+}
+.mainview__hire--percent-circle1 svg circle:nth-child(2){
+    stroke:#fe7d50;
+    stroke-dashoffset: calc( 114 - ( 114 * 75 ) / 100);
+}
+.mainview__hire--percent-circle2 svg circle:nth-child(2){
+    stroke:#67c3ff;
+    stroke-dashoffset: calc( 114 - ( 114 * 50 ) / 100);
+}
+.mainview__hire--percent-circle3 svg circle:nth-child(2){
+    stroke-dashoffset: calc( 114 - ( 114 * 0 ) / 100);
+}
+.mainview__hire--percent-circle4 svg circle:nth-child(2){
+    stroke:#02bfa1;
+    stroke-dashoffset: calc( 114 - ( 114 * 65 ) / 100);
+}
+.mainview__hire--percent-circle_number{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-45%,-35%);
+}
+.mainview__hire--percent-circle_number h2{
+    font-size: 10px;
+    font-weight: 800;
+}
+.mainview__hire--percent-circle1 .mainview__hire--percent-circle_number h2{
+    color:#fe7d50;
+}
+.mainview__hire--percent-circle2 .mainview__hire--percent-circle_number h2{
+    color: #67c3ff;
+}
+.mainview__hire--percent-circle3 .mainview__hire--percent-circle_number h2{
+    color:#d7dde9;;
+}
+.mainview__hire--percent-circle4 .mainview__hire--percent-circle_number h2{
+    color:#02bfa1;
+}
+
+
+
+
+
+
+
+
+
+.mainview__hire--percent-number h3 {
+    font-size: 28px;
+    font-weight: 700;
+}
+.mainview__hire--percent-tittle {
+    width: 60%;
+}
+.mainview__hire--percent-tittle h4 {
+    font-size: 12.5px;
+    font-weight: 800;
+    margin-bottom: 0;
+    color: var(--color-title-600);
+}
+.mainview__hire--percent-tittle small{
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--color-title-400);
+}
+
+
+.mainview__candidates {
+    width: 100%;
+}
+.mainview__candidates{
+    margin-top:40px;
+}
+
+

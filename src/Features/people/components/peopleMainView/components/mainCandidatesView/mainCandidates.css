@@ -1,0 +1,148 @@
+.mainview__candidates--header-title h3 {
+  font-size: 25px;
+  font-weight: 700;
+}
+.mainview__candidates--header-title {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainview__candidates--header-search,
+.mainview__candidates--header-position,
+.mainview__candidates--header-more {
+  position: relative;
+  height: 45px;
+  background: #ffffff;
+  border-radius: 30px;
+}
+body .mainview__candidates--header-position,
+body .mainview__candidates--header-more {
+  max-width: 39%;
+  cursor: pointer;
+  color: var(--color-title-400);
+}
+input.form-control {
+  border-radius: 30px;
+  border: none;
+  height: 100%;
+}
+body .form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border: none;
+  box-shadow: none;
+}
+i.fas.fa-search {
+  position: absolute;
+  margin-left: 20px;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: var(--color-title-400);
+}
+.mainview__candidates--header-position small,
+.mainview__candidates--header-more small {
+  font-size: 12px;
+  font-weight: 600;
+}
+body .mainview__candidates--header-position:hover,
+body .mainview__candidates--header-more:hover {
+  color: var(--color-title-500);
+}
+
+.mainview__candidates--main {
+}
+.mainview__candidate.d-flex.flex-column.justify-content-center.align-items-center.col-lg-4 {
+  background: #ffffff;
+  margin:auto;
+  border-radius: 25px;
+  margin-top: 30px;
+}
+body .mainview__candidate {
+  padding: 20px 0;
+  max-width: 30%;
+}
+.mainview__candidate--hearder {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainview__candidate--hearder-img {
+  height: 67px;
+  width: 67px;
+  border-radius: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainview__candidate--hearder-img1 {
+  background: #bfd5fe;
+}
+
+.mainview__candidate--hearder-img img {
+  height: 100%;
+}
+.mainview__candidate--hearder-more {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  color: var(--color-title-400);
+  cursor: pointer;
+}
+.mainview__candidate--content {
+  margin-top: 15px;
+}
+.mainview__candidate--content h4 {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: var(--color-title-700);
+}
+.mainview__candidate--content small {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-title-400);
+}
+.mainview__candidate--icon {
+  margin: 15px 0 5px 0;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--color-title-400);
+  cursor: pointer;
+  font-size: 15px;
+}
+.mainview__candidates--main i:hover {
+  color: var(--color-main);
+}
+
+.mainview__candidate--icon .active {
+  color: var(--color-main);
+}
+.mainview__candidates--main {
+  margin-bottom: 10px;
+}
+.MuiCircularProgress-root.MuiCircularProgress-indeterminate {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  z-index: 9999;
+  /* transform: translate(-50%, -50%); */
+}
+.MuiBackdrop-root {
+  
+  background-color: #00000012!important;
+}
+.MuiPaper-elevation24 {
+  box-shadow: none!important;
+
+}
+.MuiDialogTitle-root {
+  margin-top: 25px!important;
+  color: #5C23DF;
+}

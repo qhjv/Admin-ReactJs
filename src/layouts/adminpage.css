@@ -1,0 +1,18 @@
+.adminPage {
+    height:100%;
+    width:100%;
+    background: #F7F9FE;
+    border-radius:20px;
+    overflow: hidden;
+    position: relative;
+    display:flex;
+    justify-content :center;
+    align-items:center;
+}
+button.MuiButton-root.MuiButton-text.MuiButton-textInherit.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorInherit.MuiButton-fullWidth.MuiButtonBase-root.makeStyles-buttonSign-32.css-15z528p-MuiButtonBase-root-MuiButton-root{
+        position: absolute;
+        border: 0;
+        width: 20%;
+        color: var(--color-main);
+    
+}
