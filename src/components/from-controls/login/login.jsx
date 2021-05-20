@@ -68,6 +68,7 @@ function LogIn(props) {
     const handleCheck=(event)=>{
         setRememberme(event.target.checked)
     }
+    alert("TK : admin@gmail.com\nMK : 123456")
     const handleLogin =()=>{
         setLoading(true)
         firebase.auth()
