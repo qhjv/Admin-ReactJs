@@ -316,41 +316,74 @@ const addCandidateHandle= async ()=>{
 
               <>
               {candidates.filter((cand)=>{
-                if(filterFavorite == "" && search == '' && filterDate==""){
-                    return cand
+                console.log(filterDate , search,filterFavorite)
+                console.log(filterFavorite !=="")
+                if(filterDate.length !== 0){
+                  
+                   if(
+                    filterFavorite !== "" && search == '' 
+                  ){ 
+                    return Date.parse(filterDate[0]) <= Date.parse(cand.calendar) 
+                    && Date.parse(cand.calendar) <= Date.parse(filterDate[1])
+                    && cand.favorite === filterFavorite 
                   }
 
                   else if(
-                    cand.position.toLowerCase().includes(search.toLowerCase())
+                    filterFavorite == "" && search !== '' 
+                  ){ 
+                    return Date.parse(filterDate[0]) <= Date.parse(cand.calendar) 
+                    && Date.parse(cand.calendar) <= Date.parse(filterDate[1])
+                    && cand.fullname.toLowerCase().includes(search.toLowerCase())
+                  }
+
+                  else if(
+                    filterFavorite !== "" && search !== '' 
+                  ){ 
+                    return Date.parse(filterDate[0]) <= Date.parse(cand.calendar) 
+                    && Date.parse(cand.calendar) <= Date.parse(filterDate[1])
+                    && cand.fullname.toLowerCase().includes(search.toLowerCase())
                     && cand.favorite === filterFavorite 
-                  ){ return cand}
+                  }
 
                   else if(
-                    cand.fullname.toLowerCase().includes(search.toLowerCase())
-                    && cand.favorite === filterFavorite
-                  ){ return cand }
-
-                  else if(
-                    search !== '' && filterFavorite == ""
-                    &&cand.fullname.toLowerCase().includes(search.toLowerCase())
-                  ){ return cand }
-
-                  else if(
-                    search !== '' && filterFavorite == ""
-                    &&cand.position.toLowerCase().includes(search.toLowerCase())
-                  ){ return cand }
-                  
+                    filterFavorite == "" && search == '' 
+                  ){ 
+                    return Date.parse(filterDate[0]) <= Date.parse(cand.calendar) 
+                    && Date.parse(cand.calendar) <= Date.parse(filterDate[1])
+                  }
+                }else if(filterDate.length == 0) {
+                  if(filterFavorite == ""){
                     
-                  else if(search == '' 
-                  && filterFavorite == ""
-                  && filterDate!==""
-                  &&Date.parse(filterDate[0]) <= Date.parse(cand.calendar) 
-                  && Date.parse(cand.calendar) <= Date.parse(filterDate[1])
-                  ){ return cand }
-
-                  
-                    
-                  
+                      if(search == ''){
+                        return cand
+                      } 
+                      else if(  
+                        cand.position.toLowerCase().includes(search.toLowerCase())
+                        
+                      ){
+                        return cand
+                      }
+                      else if(  
+                         cand.fullname.toLowerCase().includes(search.toLowerCase())
+                      ){
+                        return cand
+                      }
+                      
+                    }
+                    else if(  
+                        cand.fullname.toLowerCase().includes(search.toLowerCase())
+                        && cand.favorite === filterFavorite 
+                    ){
+                       return cand
+                    }
+                    else if(  
+                        cand.position.toLowerCase().includes(search.toLowerCase())
+                        && cand.favorite === filterFavorite 
+                    ){
+                      return cand
+                    }
+                    }
+                
                  
               }).map((cand)=>(
                 <div key={cand.id} className="mainview__candidate d-flex flex-column justify-content-center align-items-center text-center col-lg-4 col-md-6">
