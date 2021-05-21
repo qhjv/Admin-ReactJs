@@ -6,6 +6,8 @@ import { TextValidator, ValidatorForm } from 'react-material-ui-form-validator';
 import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
 import firebase from '../../../helpers/db';
+import "firebase/auth";
+
 
 const useStyles = makeStyles((theme) => ({
     paper: {
