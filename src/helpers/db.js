@@ -1,5 +1,5 @@
-import firebase from 'firebase';
-import "firebase/storage"
+import firebase from 'firebase/app';
+import 'firebase/storage'
 // Your web app's Firebase configuration
 var firebaseConfig = {
     apiKey: "AIzaSyCFSNfGLFueJI6B6kAhc3n_lONiKfYflbY",
