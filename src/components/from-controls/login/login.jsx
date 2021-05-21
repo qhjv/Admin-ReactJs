@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import PropTypes from 'prop-types';
 import {Container ,Link, CssBaseline , Avatar, makeStyles, Card, CardContent, Typography, FormControlLabel, Checkbox ,Button, Grid, CircularProgress  } from '@material-ui/core'
 import { LockRounded} from '@material-ui/icons'
@@ -6,7 +6,6 @@ import { TextValidator, ValidatorForm } from 'react-material-ui-form-validator';
 import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
 import firebase from '../../../helpers/db';
-import "firebase/auth";
 
 
 
@@ -69,6 +68,9 @@ function LogIn(props) {
     const handleCheck=(event)=>{
         setRememberme(event.target.checked)
     }
+     useEffect(() => {
+    alert("TK : admin@gmail.com\nMK : 123456")
+  }, [])
     const handleLogin =()=>{
         setLoading(true)
         firebase.auth()
