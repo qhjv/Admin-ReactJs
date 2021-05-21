@@ -6,12 +6,10 @@ const filterDate = createSlice({
     reducers:{
         filterDateTime:(state,action)=>{
                 state=action.payload
-                console.log(state)
                 return state
         },
         resetDate:(state,action)=>{
             state=action.payload
-                console.log(state)
                 return state
         }
     }
