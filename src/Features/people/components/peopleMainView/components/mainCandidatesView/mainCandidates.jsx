@@ -316,8 +316,6 @@ const addCandidateHandle= async ()=>{
 
               <>
               {candidates.filter((cand)=>{
-                console.log(filterDate , search,filterFavorite)
-                console.log(filterFavorite !=="")
                 if(filterDate.length !== 0){
                   
                    if(
