@@ -69,7 +69,7 @@ Mainview
     stroke-dasharray: 114;
     stroke-dashoffset: 114;
 }
-.mainview__hire--percent-circle1 svg circle:nth-child(2){
+/* .mainview__hire--percent-circle1 svg circle:nth-child(2){
     stroke:#fe7d50;
     stroke-dashoffset: calc( 114 - ( 114 * 75 ) / 100);
 }
@@ -83,7 +83,7 @@ Mainview
 .mainview__hire--percent-circle4 svg circle:nth-child(2){
     stroke:#02bfa1;
     stroke-dashoffset: calc( 114 - ( 114 * 65 ) / 100);
-}
+} */
 .mainview__hire--percent-circle_number{
     position: absolute;
     top:50%;
@@ -143,3 +143,8 @@ Mainview
 }
 
 
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper{
+    max-width:700px!important;
+    overflow: auto;
+    padding-bottom: 50px;
+}

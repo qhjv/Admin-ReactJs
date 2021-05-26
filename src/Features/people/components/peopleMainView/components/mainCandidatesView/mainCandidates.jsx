@@ -3,6 +3,8 @@ import { AddCircle } from '@material-ui/icons';
 import React, { useEffect, useRef, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { toast, ToastContainer } from 'react-toastify';
+import { useDispatch } from 'react-redux';
+import { listCandidates } from './mainCandidatesSlice';
 import '../../../../../../assets/img/admin-img.png';
 import { addCandidate, deleteCandidate, getCandidate, getCandidates, updateCandidate } from '../../../../../../data/candidatesData';
 import { storage } from '../../../../../../helpers/db';
@@ -32,13 +34,15 @@ function MainCandidates(props) {
   const [search, setSearch] = useState('');
   const [filterFavorite, setFilterFavorite] = useState('');
   const typingTimeOutRef =  useRef(null)
+  
   // const [urlImg,setUrlImg]=useState("")
-
+  const dispatch = useDispatch()
   const getlist = async()=>{
     try {
       const list = await getCandidates()
       if(list){
-
+        const action = listCandidates(list)
+        dispatch(action)
         setCandidates(list)
       }else{
         setCandidates([{
