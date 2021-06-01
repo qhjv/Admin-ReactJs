@@ -155,9 +155,9 @@ function LogIn(props) {
                        )}
                         <Grid container>
                             <Grid item>
-                                {/* <Link  onClick={props.toggle} className={classes.pointer} variant="body2">
+                                <Link  onClick={props.toggle} className={classes.pointer} variant="body2">
                                     {"Don't have an account? Sign Up"}
-                                </Link> */}
+                                </Link>
                             </Grid>
                         </Grid>
                     </ValidatorForm>
