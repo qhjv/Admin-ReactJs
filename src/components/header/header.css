@@ -42,7 +42,7 @@ navbar
     color:var(--color-title-400);
     font-size:18px;
     display: flex;
-    justify-content: end;
+    justify-content: flex-start;
     align-items: center;
     border-radius: 11px;
     cursor: pointer;
